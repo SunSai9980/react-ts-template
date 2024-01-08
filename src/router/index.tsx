@@ -8,8 +8,6 @@ const routes: RouteObject[] = [
     element: <Home />,
   },
 ];
-
-const router = createBrowserRouter(routes, {
-  basename: import.meta.env.VITE_APP_URL,
-});
+console.log(import.meta.env.VITE_APP_URL);
+const router = createBrowserRouter(routes);
 export default router;
